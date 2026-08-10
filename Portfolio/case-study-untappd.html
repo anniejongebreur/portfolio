@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untappd, Discovery Page Redesign | Annie Jongebreur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg style="display:none">
+  <marker id="pinArrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+    <path class="cs-pin-arrowhead" d="M0,0 L10,5 L0,10 Z"></path>
+  </marker>
+</svg>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html#home" class="logo">Annie Jongebreur<span class="logo-dot">.</span></a>
+    <div class="tabs">
+      <a href="about.html" class="tab">About Me</a>
+      <a href="index.html#work" class="tab">My Work</a>
+      <a href="index.html#contact" class="tab">Contact Me</a>
+    </div>
+  </nav>
+</header>
+
+<a href="index.html#work" class="cs-back">← Back to My Work</a>
+
+<!-- HEADER -->
+<header class="cs-header">
+  <p class="section-index">( 01 / My Work: Case Study )</p>
+  <h1>Untappd: Discovery Page Redesign</h1>
+  <p class="section-lede">A ground-up redesign of Untappd's main Discover page, turning a cluttered, ad-heavy home screen into a cleaner experience built around the features people actually open the app for.</p>
+
+  <div class="cs-meta">
+    <div class="cs-meta-item">
+      <span class="cs-meta-label">Role</span>
+      <span class="cs-meta-value">UX/UI Design &amp; Research</span>
+    </div>
+    <div class="cs-meta-item">
+      <span class="cs-meta-label">Type</span>
+      <span class="cs-meta-value">Independent Case Study</span>
+    </div>
+    <div class="cs-meta-item">
+      <span class="cs-meta-label">Focus</span>
+      <span class="cs-meta-value">Mobile App (Discover / Home Page)</span>
+    </div>
+  </div>
+</header>
+
+<!-- OVERVIEW -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 02 / Overview )</p>
+    <h2>Overview</h2>
+    <p>After developing an interest in UX/UI design, I started noticing the design decisions behind every app, post, and platform I use, and each one became an informal user test of its own. That habit led me to Untappd, an app for discovering and ranking beers. Its core concept is strong, but friends who used it regularly complained about the interface, the workflows, and the overall experience. So I downloaded it, ran my own tests, and set out to redesign its main Discover page.</p>
+  </div>
+</section>
+
+<!-- USER RESEARCH -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 03 / User Research )</p>
+    <h2>User Research</h2>
+    <p>To find where the real pain points were, I pulled qualitative data from Untappd-related Reddit discussions, read through App Store reviews, and interviewed friends who use the app regularly.</p>
+
+    <p><strong>What the feedback revealed:</strong></p>
+    <ul class="cs-list">
+      <li>The UI feels basic, dated, and not very engaging.</li>
+      <li>Recommended and trending beers are hard to find.</li>
+      <li>The ads feel overwhelming.</li>
+      <li>Users don't fully trust the recommendations or reviews.
+        <ul class="cs-list cs-sublist">
+          <li>Recommendations feel unreliable when reviewers have very different tastes.</li>
+          <li>Users need more encouragement to leave detailed reviews.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>To figure out how the new page should be laid out, I first needed to understand what value people actually get from the app. Combining my research with the app's stated purpose, I landed on three core goals of use:</p>
+
+    <ol class="cs-numbered">
+      <li><strong>Community Engagement:</strong> connecting with other users and friends, local breweries, and nearby events.</li>
+      <li><strong>Beverage Diary:</strong> a place to log drinks, notes, memories, and favorites.</li>
+      <li><strong>Taste Preference Education:</strong> understanding personal taste preferences, what to try next, and where to find it.</li>
+    </ol>
+
+    <p><strong>In users' own words:</strong></p>
+    <div class="cs-quotes">
+      <p class="cs-quote">"I use it to give me a rough idea on how much i might like the beer by it's rating."</p>
+      <p class="cs-quote">"I stopped using it to rate beers ages ago, but it's helpful to find specific beers."</p>
+      <p class="cs-quote">"By using Untappd. I can see what people are actual drinking at the pubs"</p>
+      <p class="cs-quote">"I love being able to select flavor profiles based on my personal interpretation, and tagging locations makes it a fun way to look back at my journeys through beer."</p>
+    </div>
+
+    <div class="cs-loop-row">
+      <p>Because Untappd is a community-driven platform, engagement feeds itself in a loop: the more people rank drinks, the more useful the app becomes for everyone.</p>
+
+      <div class="cs-cycle">
+        <svg viewBox="0 0 540 460" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <marker id="cycleArrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path class="cs-cycle-arrow" d="M0,0 L10,5 L0,10 Z"></path>
+            </marker>
+          </defs>
+
+          <path class="cs-cycle-path" marker-end="url(#cycleArrow)" d="M338.1,69.2 A195,195 0 0,1 414.4,124.7"></path>
+          <path class="cs-cycle-path" marker-end="url(#cycleArrow)" d="M459.5,263.6 A195,195 0 0,1 430.4,353.3"></path>
+          <path class="cs-cycle-path" marker-end="url(#cycleArrow)" d="M312.2,439.2 A195,195 0 0,1 217.8,439.2"></path>
+          <path class="cs-cycle-path" marker-end="url(#cycleArrow)" d="M99.6,353.3 A195,195 0 0,1 70.5,263.6"></path>
+          <path class="cs-cycle-path" marker-end="url(#cycleArrow)" d="M115.6,124.7 A195,195 0 0,1 192.0,69.2"></path>
+
+          <rect class="cs-cycle-node-rect" x="187.5" y="16" width="155" height="78" rx="10"></rect>
+          <text class="cs-cycle-label" x="265" y="46"><tspan x="265" dy="0">More users rank</tspan><tspan x="265" dy="13">beverages</tspan></text>
+
+          <rect class="cs-cycle-node-rect" x="373" y="151" width="155" height="78" rx="10"></rect>
+          <text class="cs-cycle-label" x="450" y="179"><tspan x="450" dy="0">Larger sample size</tspan><tspan x="450" dy="13">of reviews for</tspan><tspan x="450" dy="13">data insights</tspan></text>
+
+          <rect class="cs-cycle-node-rect" x="302.5" y="369" width="155" height="78" rx="10"></rect>
+          <text class="cs-cycle-label" x="380" y="391"><tspan x="380" dy="0">More accurate and</tspan><tspan x="380" dy="13">applicable rankings</tspan><tspan x="380" dy="13">for the general</tspan><tspan x="380" dy="13">population</tspan></text>
+
+          <rect class="cs-cycle-node-rect" x="72.5" y="369" width="155" height="78" rx="10"></rect>
+          <text class="cs-cycle-label" x="150" y="391"><tspan x="150" dy="0">Better references to</tspan><tspan x="150" dy="13">generate user</tspan><tspan x="150" dy="13">preferences and</tspan><tspan x="150" dy="13">recommendations</tspan></text>
+
+          <rect class="cs-cycle-node-rect" x="2.5" y="151" width="155" height="78" rx="10"></rect>
+          <text class="cs-cycle-label" x="80" y="181"><tspan x="80" dy="0">Increased trust</tspan><tspan x="80" dy="13">drives engagement</tspan></text>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEMS -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 04 / The Problems )</p>
+    <h2>The Problems</h2>
+
+    <div class="cs-problem-intro">
+      <div class="cs-figure cs-problem-intro-image">
+        <img src="assets/untappd/initial-layout.png" alt="Untappd's current Discover page shown across three screens">
+        <p class="cs-figure-caption">Untappd's current Discover page.</p>
+      </div>
+      <div class="cs-flow-vertical">
+        <p class="cs-flow-vertical-label">The current experience flows through the page roughly like this:</p>
+        <div class="cs-flow-chip">Search</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Merchandise Ad</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Map (breweries &amp; bars)</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Shop</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Ad</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Upcoming Events</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Badges</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Trending (drinks, places, top rated)</div>
+        <span class="cs-flow-arrow-down">↓</span>
+        <div class="cs-flow-chip">Recommended</div>
+      </div>
+    </div>
+
+    <div class="cs-problem-cols">
+      <div class="cs-problem-col">
+        <h3>UI</h3>
+        <p>The main layout crams in a lot of different parts, including ads, a map, items for sale, events, badges, recommendations, and trending lists, all organized in a way that overwhelms the user. Hard black lines between sections break up the flow and make it feel disjointed. On top of that, the UI feels outdated, which makes the experience frustrating and makes the product feel unvalued, as if the team hasn't invested in a more modern, pleasant interface.</p>
+      </div>
+
+      <div class="cs-problem-col">
+        <h3>UX</h3>
+        <p>The layout doesn't encourage the kind of engagement the app depends on. Recommendations and trending beverages (arguably the main draw of the app) are pushed to the very bottom of the screen instead of being the focus. Even the call-to-action to start ranking drinks, which is critical for a first-time user, sits at the bottom of the page.</p>
+      </div>
+    </div>
+
+    <div class="cs-cta-showcase">
+      <p class="cs-quote cs-cta-quote">"Only to track what I've tried. I don't rate beers, just record them."</p>
+      <div class="cs-figure cs-figure-solo">
+        <img src="assets/untappd/cta-before.png" alt="Current Untappd screen showing the ranking call-to-action buried at the bottom of the page">
+        <p class="cs-figure-caption">The call-to-action to start ranking only appears after scrolling past ads, a map, events, and badges.</p>
+      </div>
+      <p class="cs-quote cs-cta-quote">"[I] realize ads are a way to fund growth, but the types of ads and frequency of them are annoying and sometimes disturbing ... .You've abandoned what used to be fun about this app, which was a way to connect with breweries and other beer lovers."</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE SOLUTION -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 05 / The Solution )</p>
+    <h2>The Solution</h2>
+
+    <div class="cs-problem-cols">
+      <div class="cs-problem-col">
+        <h3>UI</h3>
+        <ul class="cs-list">
+          <li>Limit the number of on-screen options for a cleaner UI. Fewer choices simplify decision-making and give users faster access to the app's primary functions.</li>
+          <li>Apply warmer brand colors, consistent spacing, and a clear layout hierarchy throughout.</li>
+        </ul>
+      </div>
+
+      <div class="cs-problem-col">
+        <h3>UX</h3>
+        <ul class="cs-list">
+          <li>Surface the features users care about most: drink recommendations based on past reviews, taste preferences, recently logged beverages, and easy navigation to the social/community side of the app.</li>
+          <li>Add a call-to-action on the main page for first-time downloads, prompting users to start ranking beverages right away.</li>
+          <li>Redesign the navigation bar, centering the call-to-action to rank a new beverage and simplifying the tabs.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDING PRINCIPLES -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 06 / Guiding Principles )</p>
+    <h2>Guiding Principles</h2>
+
+    <div class="cs-principles">
+      <div class="principle-card">
+        <span class="principle-index">01</span>
+        <h3>Jakob's Law</h3>
+        <p>Users spend most of their time on other apps, so they carry those expectations with them. Placing familiar elements (search bar, navigation menu) where users expect them reduces cognitive load and keeps the interface intuitive.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">02</span>
+        <h3>Balance</h3>
+        <p>Modules should be clean, symmetrical, and organized so users can navigate the app with minimal effort.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">03</span>
+        <h3>Trust</h3>
+        <p>A simpler, more modern UI increases user trust and makes the app feel more professional.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">04</span>
+        <h3>Hick's Law</h3>
+        <p>The more choices a user is presented with, the longer it takes them to decide. Limiting on-screen options at any given time speeds up decision-making and keeps the interface feeling simple rather than overwhelming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IDEATION -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 07 / Ideation )</p>
+    <h2>Ideation</h2>
+    <p>Using these guiding principles and solutions, I drafted several wireframes. Each one includes a call-to-action button to add a drink ranking and a navigation bar positioned within the thumb zone for easy access.</p>
+
+    <div class="wireframe-grid">
+      <div class="wireframe-card">
+        <img src="assets/untappd/wireframe-1.png" alt="Wireframe 1">
+        <h4>Wireframe 1</h4>
+        <p class="wf-pros"><span>Pros</span>Strong visual hierarchy, a grid-scroll format that supports more information, and cropped content that encourages scrolling.</p>
+        <p class="wf-cons"><span>Cons</span>More visually crowded than the others; more options could raise cognitive load.</p>
+      </div>
+      <div class="wireframe-card">
+        <img src="assets/untappd/wireframe-2.png" alt="Wireframe 2">
+        <h4>Wireframe 2</h4>
+        <p class="wf-pros"><span>Pros</span>A dominant focal point, an inviting main screen, and a simple layout.</p>
+        <p class="wf-cons"><span>Cons</span>Fits less information overall, since the main hero takes up most of the screen.</p>
+      </div>
+      <div class="wireframe-card">
+        <img src="assets/untappd/wireframe-3.png" alt="Wireframe 3">
+        <h4>Wireframe 3</h4>
+        <p class="wf-pros"><span>Pros</span>Balanced, consistent design with uniform rows that allow multiple highlights.</p>
+        <p class="wf-cons"><span>Cons</span>Multiple focal points can feel less inviting on open, and the larger section reads like an afterthought below the list rows.</p>
+      </div>
+      <div class="wireframe-card">
+        <img src="assets/untappd/wireframe-4.png" alt="Wireframe 4">
+        <h4>Wireframe 4</h4>
+        <p class="wf-pros"><span>Pros</span>One unified section.</p>
+        <p class="wf-cons"><span>Cons</span>Functions aren't visually separated, which could cause confusion and doesn't visually invite scrolling.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:28px;">I ultimately based my final design on a mix of Wireframe 1 and 2, combining a strong, welcoming focal point with enough surfaced information to encourage scrolling and engagement.</p>
+  </div>
+</section>
+
+<!-- FINAL DESIGN -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 08 / My Final Design )</p>
+    <h2>My Final Design</h2>
+    <p>In my final design, I updated Untappd's Discover/home page UX and UI to create an easier, more enjoyable experience.</p>
+
+    <p class="subgrid-label">General choices, and why</p>
+
+    <div class="choice-row">
+      <div class="choice-media"><img src="assets/untappd/color-palette.png" alt="Before and after color palette: bright yellow/blue on top, warmer gold/blue on bottom"></div>
+      <div class="choice-text">
+        <span class="cs-meta-label">01. Color Palette</span>
+        <h3>Warmer, more subdued accents</h3>
+        <p>I moved to a more neutral base palette and rebranded the accent colors to a subtler, more professional gold and blue. This keeps the colors needed for brand recognition, but trades a chaotic, bright interface for a calmer one.</p>
+      </div>
+    </div>
+
+    <div class="choice-row">
+      <div class="choice-media"><img src="assets/untappd/font.png" alt="Before: Helvetica. After: Hanuman typeface comparison"></div>
+      <div class="choice-text">
+        <span class="cs-meta-label">02. Typography</span>
+        <h3>A softer, friendlier typeface</h3>
+        <p>I changed the base font from Helvetica to Hanuman, a softer typeface that helps the app feel more welcoming, approachable, and casual.</p>
+      </div>
+    </div>
+
+    <div class="choice-row">
+      <div class="choice-media"><img src="assets/untappd/cta-after.png" alt="Redesigned onboarding screen with a locked flavor profile radar chart and call-to-action"></div>
+      <div class="choice-text">
+        <span class="cs-meta-label">03. Onboarding CTA</span>
+        <h3>A reason to rank your first drink</h3>
+        <p>For new users, I designed an obvious call-to-action right on the main page as soon as the app opens. It prompts users to start ranking drinks to "unlock" their taste preferences, gamifying the action while surfacing the educational value of ranking. Recommendation cards start empty, too, giving users another reason to engage before they see any payoff.</p>
+      </div>
+    </div>
+
+    <div class="choice-row choice-row-noimg">
+      <div class="choice-text">
+        <span class="cs-meta-label">04. Dead-End Cleanup</span>
+        <h3>Removing inactive features</h3>
+        <p>I removed buttons (like messaging) that pointed to features that are no longer active, so users never land on a dysfunctional page.</p>
+      </div>
+    </div>
+
+    <p class="subgrid-label">The Redesigned Layout</p>
+
+    <div class="cs-layout-showcase">
+
+      <div class="cs-annotated-screen">
+        <div class="cs-callouts-left">
+          <div class="cs-callout" style="top:4%;">
+            <span class="cs-callout-num">1</span>
+            <p>A "Cheers, [Name]!" banner welcomes the user, then scrolls away into a search bar pinned to the top for easy access.</p>
+          </div>
+          <div class="cs-callout" style="top:35%;">
+            <span class="cs-callout-num">3</span>
+            <p>Pinned shortcut buttons for trending drinks, top drinks, trending places, and top places stay accessible no matter how far the user scrolls.</p>
+          </div>
+        </div>
+
+        <div class="cs-annotated-media">
+          <img src="assets/untappd/layout-idea-1.png" alt="Final redesigned Untappd Discover page: home screen with flavor profile and top recommendations">
+        </div>
+
+        <div class="cs-callouts-right">
+          <div class="cs-callout" style="top:12%;">
+            <span class="cs-callout-num">2</span>
+            <p>A vertical scroll indicator gives users feedback on where they are on the page.</p>
+          </div>
+          <div class="cs-callout" style="top:36%;">
+            <span class="cs-callout-num">4</span>
+            <p>The user's taste profile opens the page and sharpens with every ranking, fueling both taste education and friendly comparison with friends.</p>
+          </div>
+        </div>
+
+        <svg class="cs-callout-lines" viewBox="0 0 1060 809" preserveAspectRatio="none">
+          <path d="M300,45 Q 343,28 378,57" marker-end="url(#pinArrow)"></path>
+          <path d="M300,296 Q 398,248 402,138" marker-end="url(#pinArrow)"></path>
+          <path d="M760,110 Q 722,95 690,121" marker-end="url(#pinArrow)"></path>
+          <path d="M760,304 Q 723,241 650,243" marker-end="url(#pinArrow)"></path>
+        </svg>
+      </div>
+
+      <div class="cs-annotated-screen">
+        <div class="cs-callouts-left">
+          <div class="cs-callout" style="top:18%;">
+            <span class="cs-callout-num">6</span>
+            <p>Recent rankings show rating, notes, and a beer photo (or the user's own), with a button to pull up older history.</p>
+          </div>
+          <div class="cs-callout" style="top:55%;">
+            <span class="cs-callout-num">7</span>
+            <p>Upcoming events list time, location, and other details so users can judge whether to attend.</p>
+          </div>
+        </div>
+
+        <div class="cs-annotated-media">
+          <img src="assets/untappd/layout-idea-2.png" alt="Final redesigned Untappd Discover page: recent rankings and upcoming events">
+        </div>
+
+        <div class="cs-callouts-right">
+          <div class="cs-callout" style="top:8%;">
+            <span class="cs-callout-num">5</span>
+            <p>Top recommendation cards are clickable, each with a call-to-action to rank the beverage right on the spot.</p>
+          </div>
+          <div class="cs-callout" style="top:70%;">
+            <span class="cs-callout-num">8</span>
+            <p>The nav bar centers the ranking CTA (+) and highlights the current tab in blue: Home, Shop, Activity, Profile.</p>
+          </div>
+        </div>
+
+        <svg class="cs-callout-lines" viewBox="0 0 1060 808" preserveAspectRatio="none">
+          <path d="M300,158 Q 332,278 450,315" marker-end="url(#pinArrow)"></path>
+          <path d="M300,457 Q 321,597 442,671" marker-end="url(#pinArrow)"></path>
+          <path d="M760,78 Q 635,134 602,267" marker-end="url(#pinArrow)"></path>
+          <path d="M760,579 Q 615,593 530,711" marker-end="url(#pinArrow)"></path>
+        </svg>
+      </div>
+
+    </div>
+
+    <p class="cs-conclusion">Together, these changes turn the Discover page from something users tolerated into something built to be used. Familiar patterns, like a search bar and navigation exactly where people already expect them, keep the interface intuitive, while fewer on-screen choices at any one time make the primary actions easy to find and act on quickly. Every interactive element reinforces that: shadows on the recommendation cards invite a tap for more detail, and their blue call-to-action buttons let users rank a beverage on the spot. The flavor-profile card and personalized recommendations give ranking real, ongoing payoff, turning taste-preference education into the app's main draw rather than an afterthought. Paired with consistent feedback at every step and a simpler, more modern UI, the result is a page users can trust, and one they'll actually want to open.</p>
+  </div>
+</section>
+
+<!-- IMPACT -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 09 / The Impact )</p>
+    <h2>The Impact</h2>
+    <p><strong>Effects of the improved UI:</strong></p>
+    <ul class="cs-list">
+      <li>Increased trust and accessibility</li>
+      <li>Increased potential for engagement</li>
+      <li>A more personalized user experience</li>
+    </ul>
+
+    <p>To measure that impact, I gathered qualitative feedback alongside quantitative ratings on both designs across five areas: organization, professionalism, trustworthiness, welcoming feel, and ease of navigation.</p>
+
+    <p class="subgrid-label">Rated increase, original vs. redesign</p>
+    <div class="cs-stat-grid">
+      <div class="cs-stat"><span class="cs-stat-num">+79%</span><span class="cs-stat-label">Organization</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">+50%</span><span class="cs-stat-label">Professionalism</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">+73%</span><span class="cs-stat-label">Trustworthiness</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">+52%</span><span class="cs-stat-label">Welcoming Feel</span></div>
+      <div class="cs-stat"><span class="cs-stat-num">+95%</span><span class="cs-stat-label">Ease of Navigation</span></div>
+    </div>
+
+    <p class="subgrid-label">What users said</p>
+    <div class="cs-problem-cols">
+      <div class="cs-problem-col">
+        <h3>Original App</h3>
+        <p><strong>What worked:</strong> Users liked the thematic sections, the bottom navigation bar, the accessible search bar and official beer logos, and the app's playful, colorful identity.</p>
+        <p><strong>What didn't:</strong> That same energy tipped into clutter for most. Oversized ads, vague categories, heavy stock imagery, and misplaced priorities left the app feeling disorganized and visually overwhelming, and a few users flagged poor contrast in the lower sections.</p>
+      </div>
+      <div class="cs-problem-col">
+        <h3>Redesign</h3>
+        <p><strong>What worked:</strong> Personalization stood out most, especially the flavor-profile graph and tailored recommendations, alongside the calmer colorway, clearer organization, and improved readability. Several users called out the centered "+" nav button and the black-on-yellow contrast specifically.</p>
+        <p><strong>What didn't:</strong> Feedback was noticeably lighter here and mostly requests for more functionality, like a map feature and a larger search bar, rather than fixes, plus one note that the yellow tone could be adjusted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TAKEAWAYS -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 10 / Takeaways )</p>
+    <h2>Takeaways</h2>
+    <ol class="cs-numbered">
+      <li><strong>A redesign is a system, not a single screen.</strong> UI changes, like a warmer palette and softer typeface, work in tandem with UX changes to emphasize a personalized user experience and real value.</li>
+      <li><strong>Knowing what to leave out matters just as much as what to include.</strong> This first iteration of a full app redesign couldn't support ads, full accessibility, and every edge-case feedback state. Choosing which features to visually call out helped keep the redesign focused, rather than trying to solve everything at once.</li>
+      <li><strong>The more feedback, the better.</strong> The more initial research, different perspectives, and feedback you gather during the design phase, the stronger the design becomes. After gathering feedback to measure the redesign's impact on user experience, I came across new suggestions and perspectives for eleven future improvements.</li>
+    </ol>
+  </div>
+</section>
+
+<!-- OPPORTUNITIES -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 11 / Opportunities for Continued Improvement )</p>
+    <h2>Opportunities for Continued Improvement</h2>
+    <p>Some ideas or features that could be added after further research:</p>
+    <div class="cs-principles cs-principles-tight">
+      <div class="principle-card">
+        <span class="principle-index">01</span>
+        <h3>Beer Education</h3>
+        <p>Ways to educate users on how beer is made and the different styles that exist, in hopes it could better inform their ordering decisions.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">02</span>
+        <h3>Rethink Badges</h3>
+        <p>The badge feature tries to gamify the app, but users find it more annoying than motivating. It could be replaced with a simple streak on a profile, or friendly competitions between friends.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">03</span>
+        <h3>Remove the Dead Message Icon</h3>
+        <p>The message feature has been retired, but its icon still appears in the app. Tapping it just explains that messaging is no longer active. I'd recommend removing it entirely to avoid unnecessary friction.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">04</span>
+        <h3>Light &amp; Dark Mode</h3>
+        <p>Add Light and Dark Mode appearance options, giving users more control over their experience.</p>
+      </div>
+      <div class="principle-card">
+        <span class="principle-index">05</span>
+        <h3>Consistent Terminology</h3>
+        <p>Use consistent, beer-specific language throughout. Some parts of the app say "breweries," others say "producers." Standardizing on "breweries" would make the terminology easier to recognize and search for.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIMITATIONS -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 12 / Limitations )</p>
+    <h2>Limitations</h2>
+    <ul class="cs-list">
+      <li>This redesign doesn't currently account for advertisements. They could be added back in strategically so they complement the app's features rather than overwhelm them.</li>
+      <li>Accessibility needs further consideration for implementation: responsive font sizing, responsive layouts, screen reader support, and related factors.</li>
+      <li>This redesign should include sufficient feedback for the user to know their status, when drinks were accurately logged, or when recommendations are updated.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="cs-section section-cream">
+  <div class="cs-section-inner cs-body">
+    <p class="section-index">( 13 / Sources )</p>
+    <h2>Sources</h2>
+    <p>Sources for the quotes and user research referenced throughout this case study:</p>
+    <ul class="cs-sources">
+      <li><a href="https://www.reddit.com/r/beer/comments/184iqm4/untappd_sucks_as_an_app/" target="_blank" rel="noopener">reddit.com/r/beer: "Untappd sucks as an app"</a></li>
+      <li><a href="https://www.reddit.com/r/beer/comments/1myqulu/anyone_still_use_untapped/" target="_blank" rel="noopener">reddit.com/r/beer: "Anyone still use Untapped?"</a></li>
+      <li><a href="https://apps.apple.com/us/app/untappd-find-drinks-you-love/id449141888#productRatings" target="_blank" rel="noopener">App Store: Untappd, Find Drinks You Love</a></li>
+    </ul>
+  </div>
+</section>
+
+<div class="cs-footer-nav">
+  <a href="index.html#work" class="btn btn-primary">← Back to My Work</a>
+  <a href="index.html#contact" class="tab">Get in touch →</a>
+</div>
+
+<footer class="footer footer-light">© <span id="year"></span> Annie Jongebreur</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
