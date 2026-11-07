@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Annie Jongebreur, Research &amp; Product Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav-wrap">
+  <nav class="nav">
+    <a href="index.html#home" class="logo">Annie Jongebreur</a>
+    <div class="tabs">
+      <a href="about.html" class="tab">About</a>
+      <a href="#work" class="tab">Work</a>
+      <a href="#contact" class="tab">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Research &amp; Product Design</p>
+      <h1 class="hero-line">Hi, I'm <span class="hero-name">Annie.</span></h1>
+      <p class="hero-sub">UCLA grad, analyst, and life long student.</p>
+      <p class="hero-lede">I study how people make decisions, then use that to shape products and strategy. Currently an Analyst at Tegus by AlphaSense, based in Chicago.</p>
+      <div class="btns">
+        <a href="#work" class="btn">View my work</a>
+        <a href="about.html" class="btn btn-line">About me</a>
+      </div>
+    </div>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img src="assets/annie-photo.jpg" alt="Annie Jongebreur" class="hero-photo">
+      </div>
+      <p class="hero-caption"><span>Annie Jongebreur</span><span>Chicago, IL</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="section section-cream">
+  <div class="section-inner">
+    <p class="section-index">Selected work</p>
+    <h2 class="section-title">Case studies</h2>
+    <p class="section-lede">A few research-driven projects that shaped how I think about people and products.</p>
+
+    <div class="work-list">
+      <a href="case-study-untappd.html" class="work-row">
+        <span class="work-num">01</span>
+        <h3>Untappd: Discovery Page Redesign</h3>
+        <p>A ground-up UX/UI redesign grounded in Reddit and App Store research.</p>
+        <span class="work-tag">UX / UI</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-retirement-framing.html" class="work-row">
+        <span class="work-num">02</span>
+        <h3>Reframing Retirement with Prof. Hal Hershfield</h3>
+        <p>Behavioral economics research at UCLA Anderson on how people think about retirement, including work with Prudential.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-moral-disengagement.html" class="work-row">
+        <span class="work-num">03</span>
+        <h3>Guilt &amp; Self-Serving Justification in Moral Disengagement</h3>
+        <p>A full experiment on why people steal, testing guilt and room for justification.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-cpg.html" class="work-row">
+        <span class="work-num">04</span>
+        <h3>Halfday Iced Tea Go-to-Market</h3>
+        <p>Segmentation, pricing, and a twelve month promotional plan.</p>
+        <span class="work-tag">Strategy</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-hotelyr.html" class="work-row">
+        <span class="work-num">05</span>
+        <h3>Hotelyr Boutique Hotel Personas</h3>
+        <p>Survey research turned into two customer personas for a startup.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section section-cream">
+  <div class="section-inner">
+    <p class="section-index">Contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="section-lede">Have a project, a role, or just want to talk research and design? My inbox is open.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:anniehope26@g.ucla.edu">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">anniehope26@g.ucla.edu</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/annie-jongebreur-1019b5239" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/annie-jongebreur</span>
+      </a>
+      <div class="contact-card">
+        <span class="contact-label">Based in</span>
+        <span class="contact-value">Chicago, IL</span>
+      </div>
+    </div>
+
+    <form class="contact-form" action="mailto:anniehope26@g.ucla.edu" method="post" enctype="text/plain">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Your email" required>
+      </div>
+      <textarea name="message" rows="4" placeholder="Say hello..." required></textarea>
+      <button type="submit" class="btn">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">© <span id="year"></span> Annie Jongebreur</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
