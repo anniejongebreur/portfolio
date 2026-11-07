@@ -3,59 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Annie Jongebreur, Product Designer</title>
+<title>Annie Jongebreur, Research &amp; Product Design</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Rebus icon sprite (hidden) -->
-<svg style="display:none">
-  <symbol id="icon-designer" viewBox="0 0 24 24"><path d="M4 4 L20 12 L12 13 L9 20 Z"/></symbol>
-  <symbol id="icon-researcher" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><line x1="14.6" y1="14.6" x2="21" y2="21"/></symbol>
-  <symbol id="icon-baker" viewBox="0 0 24 24"><path d="M5 10 L19 10 L17 20 L7 20 Z"/><path d="M6 10 C6 5,10 5,10 8.5 C10 5,14 5,14 8.5 C14 5,18 5,18 10"/><circle cx="12" cy="5.5" r="1.2" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="icon-traveler" viewBox="0 0 24 24"><path d="M3 11 L21 3 L13 21 L10 13 L3 11 Z"/><line x1="10" y1="13" x2="21" y2="3"/></symbol>
-  <symbol id="icon-bruin" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><circle cx="6.5" cy="6.5" r="2.4"/><circle cx="17.5" cy="6.5" r="2.4"/><circle cx="9.3" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="14.7" cy="12" r="0.8" fill="currentColor" stroke="none"/><circle cx="12" cy="15" r="1.3" fill="currentColor" stroke="none"/></symbol>
-  <symbol id="icon-plus" viewBox="0 0 24 24"><line x1="12" y1="4" x2="12" y2="20"/><line x1="4" y1="12" x2="20" y2="12"/></symbol>
-  <symbol id="icon-person" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21 C4 15, 20 15, 20 21"/></symbol>
-  <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 3 h6 M10 3 v6 l-6 11 a1 1 0 0 0 1 1.5 h14 a1 1 0 0 0 1 -1.5 L14 9 V3"/><line x1="7.5" y1="15" x2="16.5" y2="15"/></symbol>
-  <symbol id="icon-chart" viewBox="0 0 24 24"><path d="M4 20 V4 M4 20 H20"/><path d="M7 16 L11 10 L14 13 L19 6"/></symbol>
-</svg>
-
 <!-- NAV -->
 <header class="nav-wrap">
   <nav class="nav">
-    <a href="index.html#home" class="logo">Annie Jongebreur<span class="logo-dot">.</span></a>
+    <a href="index.html#home" class="logo">Annie Jongebreur</a>
     <div class="tabs">
-      <a href="about.html" class="tab">About Me</a>
-      <a href="#work" class="tab">My Work</a>
-      <a href="#contact" class="tab">Contact Me</a>
+      <a href="about.html" class="tab">About</a>
+      <a href="#work" class="tab">Work</a>
+      <a href="#contact" class="tab">Contact</a>
     </div>
   </nav>
 </header>
 
 <!-- HERO -->
 <section id="home" class="hero">
-  <span class="corner-mark corner-tl">+</span>
-  <span class="corner-mark corner-tr">+</span>
-  <span class="corner-mark corner-bl">+</span>
-  <span class="corner-mark corner-br">+</span>
-
   <div class="hero-grid">
     <div class="hero-copy">
-      <p class="eyebrow">( product design &amp; research portfolio )</p>
-      <h1 class="hero-line">
-        Hi, I'm <span class="cycle-wrap"><span id="cycle-word" class="cycle-word">Annie</span></span>
-        <svg id="cycle-icon" class="rebus-icon" viewBox="0 0 24 24"><use href="#icon-designer"></use></svg>
-      </h1>
-      <p class="hero-sub">Cognitive science grad turned product designer. I sketch, research, and bake my way to better ideas.</p>
-      <a href="#work" class="btn btn-primary">View my work →</a>
+      <p class="eyebrow">Research &amp; Product Design</p>
+      <h1 class="hero-line">Hi, I'm <span class="hero-name">Annie.</span></h1>
+      <p class="hero-sub">UCLA grad, analyst, and life long student.</p>
+      <p class="hero-lede">I study how people make decisions, then use that to shape products and strategy. Currently an Analyst at Tegus by AlphaSense, based in Chicago.</p>
+      <div class="btns">
+        <a href="#work" class="btn">View my work</a>
+        <a href="about.html" class="btn btn-line">About me</a>
+      </div>
     </div>
-    <div class="hero-photo-frame">
-      <img src="assets/annie-photo.jpg" alt="Annie Jongebreur" class="hero-photo" onerror="this.parentElement.classList.add('photo-missing')">
-      <span class="photo-fallback">Add<br>annie-photo.jpg<br>to /assets</span>
+    <div class="hero-photo-wrap">
+      <div class="hero-photo-frame">
+        <img src="assets/annie-photo.jpg" alt="Annie Jongebreur" class="hero-photo">
+      </div>
+      <p class="hero-caption"><span>Annie Jongebreur</span><span>Chicago, IL</span></p>
     </div>
   </div>
 </section>
@@ -63,68 +48,56 @@
 <!-- WORK -->
 <section id="work" class="section section-cream">
   <div class="section-inner">
-    <p class="section-index">( 01 / My Work )</p>
-    <h2 class="section-title">Selected Work</h2>
+    <p class="section-index">Selected work</p>
+    <h2 class="section-title">Case studies</h2>
     <p class="section-lede">A few research-driven projects that shaped how I think about people and products.</p>
 
-    <a href="case-study-untappd.html" class="featured-case">
-      <div class="featured-case-media">
-        <img src="assets/untappd/cta-after.png" alt="Redesigned Untappd onboarding screen with a locked flavor profile radar chart">
-      </div>
-      <div class="featured-case-copy">
-        <span class="work-kicker">UX/UI Case Study</span>
+    <div class="work-list">
+      <a href="case-study-untappd.html" class="work-row">
+        <span class="work-num">01</span>
         <h3>Untappd: Discovery Page Redesign</h3>
-        <p>A ground-up redesign of Untappd's cluttered, ad-heavy Discover page, grounded in Reddit and App Store research and restructured around the features people actually open the app for.</p>
-        <div class="tag-row">
-          <span class="tag">User Research</span>
-          <span class="tag">Wireframing</span>
-          <span class="tag">UI Design</span>
-        </div>
-        <span class="btn btn-primary">View case study →</span>
-      </div>
-    </a>
-
-    <p class="subgrid-label">More Research Highlights</p>
-    <div class="work-grid">
-      <article class="work-card">
-        <div class="icon-tile"><svg viewBox="0 0 24 24" class="line-icon"><use href="#icon-person"></use></svg></div>
-        <span class="work-kicker">Research &amp; Personas</span>
-        <h3>Boutique Hotel Owner Personas</h3>
-        <p>Designed and fielded surveys with independent boutique hotel owners, then synthesized findings into customer personas covering motivations, challenges, and engagement preferences.</p>
-        <span class="work-tag">Hotelyr, Research &amp; Analytics Intern</span>
-      </article>
-
-      <article class="work-card">
-        <div class="icon-tile"><svg viewBox="0 0 24 24" class="line-icon"><use href="#icon-flask"></use></svg></div>
-        <span class="work-kicker">Behavioral Research</span>
-        <h3>Designing Behavioral Economics Studies</h3>
-        <p>Converted abstract decision-making research questions into dozens of Qualtrics survey stimuli, then launched and analyzed studies on MTurk and Prolific.</p>
-        <span class="work-tag">UCLA Anderson School of Management</span>
-      </article>
-
-      <article class="work-card">
-        <div class="icon-tile"><svg viewBox="0 0 24 24" class="line-icon"><use href="#icon-chart"></use></svg></div>
-        <span class="work-kicker">Strategy &amp; Market Research</span>
-        <h3>CPG Beverage Go-to-Market Strategy</h3>
-        <p>Built a full marketing plan for a CPG beverage brand: target audience, market segmentation, pricing, promotions, and ROI.</p>
-        <span class="work-tag">Independent Research Project</span>
-      </article>
-
-      <article class="work-card work-card-add">
-        <div class="icon-tile"><svg viewBox="0 0 24 24" class="line-icon"><use href="#icon-plus"></use></svg></div>
-        <h3>More work in progress</h3>
-        <p>New case studies, prototypes, and Figma walk-throughs coming soon.</p>
-      </article>
+        <p>A ground-up UX/UI redesign grounded in Reddit and App Store research.</p>
+        <span class="work-tag">UX / UI</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-retirement-framing.html" class="work-row">
+        <span class="work-num">02</span>
+        <h3>Reframing Retirement with Prof. Hal Hershfield</h3>
+        <p>Behavioral economics research at UCLA Anderson on how people think about retirement, including work with Prudential.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-moral-disengagement.html" class="work-row">
+        <span class="work-num">03</span>
+        <h3>Guilt &amp; Self-Serving Justification in Moral Disengagement</h3>
+        <p>A full experiment on why people steal, testing guilt and room for justification.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-cpg.html" class="work-row">
+        <span class="work-num">04</span>
+        <h3>Halfday Iced Tea Go-to-Market</h3>
+        <p>Segmentation, pricing, and a twelve month promotional plan.</p>
+        <span class="work-tag">Strategy</span>
+        <span class="work-arrow">→</span>
+      </a>
+      <a href="case-study-hotelyr.html" class="work-row">
+        <span class="work-num">05</span>
+        <h3>Hotelyr Boutique Hotel Personas</h3>
+        <p>Survey research turned into two customer personas for a startup.</p>
+        <span class="work-tag">Research</span>
+        <span class="work-arrow">→</span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact" class="section section-navy">
-  <div class="section-inner contact-inner">
-    <p class="section-index on-dark">( 02 / Contact Me )</p>
-    <h2 class="section-title on-dark">Let's Talk</h2>
-    <p class="section-lede on-dark">Have a project, a role, or just want to talk research and design? My inbox is open.</p>
+<section id="contact" class="section section-cream">
+  <div class="section-inner">
+    <p class="section-index">Contact</p>
+    <h2 class="section-title">Let's talk</h2>
+    <p class="section-lede">Have a project, a role, or just want to talk research and design? My inbox is open.</p>
 
     <div class="contact-grid">
       <a class="contact-card" href="mailto:anniehope26@g.ucla.edu">
@@ -135,7 +108,7 @@
         <span class="contact-label">LinkedIn</span>
         <span class="contact-value">/annie-jongebreur</span>
       </a>
-      <div class="contact-card contact-card-static">
+      <div class="contact-card">
         <span class="contact-label">Based in</span>
         <span class="contact-value">Chicago, IL</span>
       </div>
@@ -147,11 +120,12 @@
         <input type="email" name="email" placeholder="Your email" required>
       </div>
       <textarea name="message" rows="4" placeholder="Say hello..." required></textarea>
-      <button type="submit" class="btn btn-light">Send it my way →</button>
+      <button type="submit" class="btn">Send message</button>
     </form>
   </div>
-  <footer class="footer">© <span id="year"></span> Annie Jongebreur</footer>
 </section>
+
+<footer class="footer">© <span id="year"></span> Annie Jongebreur</footer>
 
 <script src="script.js"></script>
 </body>
